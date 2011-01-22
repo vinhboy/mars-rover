@@ -1,0 +1,11 @@
+<% if @commands %>
+  <p>Size: <%= @commands[0] %></p>
+  <p>Rover 1 Start: <%= @commands[1] %></p>
+  <p>Rover 1 End: <%= @rover_one %></p>
+  <p>Rover 2 Start: <%= @commands[3] %></p>
+  <p>Rover 2 End: <%= @rover_two %></p>
+<% end %>
+<%= form_tag '/', :method => 'POST' do %>
+   <%= text_area_tag "commands", nil, :size => "25x5" %><br />
+   <%= submit_tag "Move!" %>
+<% end %>
