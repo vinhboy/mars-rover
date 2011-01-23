@@ -1,0 +1,64 @@
+#body,html {
+  background: url(/images/stars.gif);
+}
+#wrapper {
+  background: url(/images/background.jpg) repeat-y;
+  width: 1024px;
+  min-height: 495px;
+  margin: auto;
+  position: relative;
+  padding: 20px;
+}
+#left {
+  float: left;
+  width: 250px;
+}
+#ruby {
+  background:url(/images/ruby.png);
+  height: 159px;
+  width: 245px;
+  position: relative;
+}
+#ruby p {
+  display: block;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+  width: 100px;
+}
+#ruby span {
+  font-weight: bold;
+  color: darkred;
+}
+#right {
+  padding-left: 220px;
+  overflow: hidden;
+  padding: 50px 0;
+}
+ul {
+  display: block;
+  clear: left;
+}
+ul li {
+  float: left;
+  border: 3px solid #333;
+  display: block;
+  width: 82px;
+  height: 75px;
+  margin: 5px;
+  position: relative;
+}
+ul li img {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+}
+#rover_one,
+#rover_two {
+  display: none;
+}
+#compass {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
