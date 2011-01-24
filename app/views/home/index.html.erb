@@ -1,21 +1,27 @@
 <div id="wrapper">
+  <div id="wrapper-inner">
   <div id="left">
     <%= form_tag '/', :method => 'POST' do %>
-       <%= text_area_tag "commands", nil, :size => "25x5" %><br />
+       <%= text_area_tag "commands", nil, :size => "30x7" %><br />
        <%= submit_tag "Move!" %>
     <% end %>
-    <% if @commands %>
-      <div id="ruby"><p>Good job! I also got <span><%= @rover_one %></span> and <span><%= @rover_two %></span></p></div>
-      <p>Size: <%= @commands[0] %></p>
-      <p>Rover 1 Start: <%= @commands[1] %></p>
-      <p>Rover 1 End: <%= @rover_one %></p>
-      <p>Rover 2 Start: <%= @commands[3] %></p>
-      <p>Rover 2 End: <%= @rover_two %></p>
-    <% end %>
+    <div id="ruby"></div>
   </div>
   <div id="right">
+    <p>Enter commands in the textarea and click "move!"</p>
+    <p>This demo only accepts input in the following format:</p>
+    <p>
+      <em>[grid size]<br />[rover one start position]<br />[rover one commands]<br />[rover two start position]<br />[rover two commands]</em>
+    </p>
+    <p>Example:<br />
+      <em>5 5<br />
+    1 2 N<br />
+    L M L M L M L M M<br />
+    3 3 E<br />
+    M M R M M R M R R M</em></p>
   </div>
   <img id="rover_one" src="/images/bender.gif" />
   <img id="rover_two" src="/images/r2d2.gif" />
   <img id="compass" src="/images/compass.png" />
+  </div>
 </div>

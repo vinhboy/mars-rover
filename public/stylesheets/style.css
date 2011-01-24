@@ -6,7 +6,12 @@
   width: 1024px;
   min-height: 495px;
   margin: auto;
+  margin-top: 20px;
   position: relative;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#wrapper-inner {
   padding: 20px;
 }
 #left {
@@ -14,6 +19,7 @@
   width: 250px;
 }
 #ruby {
+  display: none;
   background:url(/images/ruby.png);
   height: 159px;
   width: 245px;
@@ -26,18 +32,24 @@
   top: 10px;
   width: 100px;
 }
-#ruby span {
+#ruby strong {
   font-weight: bold;
   color: darkred;
 }
 #right {
   padding-left: 220px;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 0;
+}
+#right p {
+  color: #fff;
 }
 ul {
   display: block;
+  float: left;
   clear: left;
+  padding: 0;
+  margin: 0;
 }
 ul li {
   float: left;
@@ -47,11 +59,14 @@ ul li {
   height: 75px;
   margin: 5px;
   position: relative;
+  color: #fff;
+  font-weight: bold;
 }
 ul li img {
   position: absolute;
   top: -45px;
   left: 0px;
+  z-index: 2;
 }
 #rover_one,
 #rover_two {
@@ -59,6 +74,6 @@ ul li img {
 }
 #compass {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 50px;
+  top: 20px;
 }
